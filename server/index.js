@@ -39,7 +39,7 @@ app.use("/api/v1/dashboard", dashboardRoute);
 app.use("/uploads", express.static("uploads"));
 app.use(errorMiddleware);
 app.listen(port, () => {
-    console.log(`Express is working on :${port}`);
+    console.log(`Express is working in :${port}`);
 });
 app.get('/', (req, res) => {
     res.send('<h1>E-commerce Backend Api</h1>');
