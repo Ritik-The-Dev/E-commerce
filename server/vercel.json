@@ -3,14 +3,14 @@
   "name": "server",
   "builds": [
     {
-      "src": "dist/app.js",
+      "src": "src/app.ts",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "dist/app.js"
+      "dest": "src/app.ts"
     }
   ],
   "rewrites": [
