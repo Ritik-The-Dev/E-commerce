@@ -1,17 +1,8 @@
 {
   "version": 2,
-  "name": "server",
+  "name": "native-server",
   "builds": [
-    {
-      "src": "src/app.ts",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "src/app.ts"
-    }
+    { "src": "index.js", "use": "@vercel/node" }
   ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.js" }
