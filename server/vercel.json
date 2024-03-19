@@ -3,7 +3,7 @@
   "name": "server",
   "builds": [
     {
-      "src": "index.js",
+      "src": "dist/app.js",
       "use": "@vercel/node"
     }
   ],
