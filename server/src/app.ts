@@ -52,3 +52,7 @@ app.use(errorMiddleware);
 app.listen(port, () => {
   console.log(`Express is working on :${port}`);
 });
+
+app.get('/', (req, res) => {
+  res.send('<h1>E-commerce Backend Api</h1>');
+});

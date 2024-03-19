@@ -269,7 +269,7 @@ export const getPieCharts = TryCatch(async (req, res, next) => {
       0
     );
 
-    const burnt = allOrders.reduce((prev, order) => prev + (order.tax || 0), 0);
+    const burnt = allOrders.reduce((prev, order) => prev + (0), 0);
 
     const marketingCost = Math.round(grossIncome * (30 / 100));
 
